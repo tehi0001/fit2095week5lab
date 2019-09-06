@@ -1,0 +1,26 @@
+<h2 class="modal-title">Add new task</h2>
+<form onsubmit="return addTask()" novalidate>
+    <div class="form-field">
+        <input type="text" id="task-name" placeholder="Task name" required>
+    </div>
+    <div class="form-field">
+        <input type="text" id="assign-to" placeholder="Assign to" required>
+    </div>
+    <div class="form-field">
+        <input type="date" id="date" placeholder="Due date" required>
+    </div>
+    <div class="form-field">
+        <select id="status" required>
+            <option value="">Status</option>
+            <option value="InProgress">InProgress</option>
+            <option value="Complete">Complete</option>
+        </select>
+    </div>
+    <div class="form-field">
+        <textarea id="description" placeholder="Task description" required></textarea>
+    </div>
+    <div class="buttons">
+        <button type="submit" class="submit-btn">Save</button>
+        <button class="cancel-btn" type="button" onclick="closeModal()">Cancel</button>
+    </div>
+</form>

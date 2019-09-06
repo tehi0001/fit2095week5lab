@@ -1,0 +1,21 @@
+<%- include head.html %>
+
+<div class="container">
+    <div class="logo"><img src="logo.png" /></div>
+    <ul class="home-btn">
+        <li>
+            <a href="#" onclick="loadPage('/addtask', event)"><span>Add new task</span></a>
+        </li>
+        <li>
+            <a href="#" onclick="loadPage('/viewtasks', event)">View all tasks</a>
+        </li>
+    </ul>
+</div>
+
+<%- include foot.html %>
+
+<div class="backdrop">
+    <div class="modal">
+        <div class="modal-body"></div>
+    </div>
+</div>

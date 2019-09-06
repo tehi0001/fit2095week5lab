@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari|Material+Icons&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e8fcf9;
+    font-family: 'Manjari', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #555;
+}
+
+.container {
+    width: 300px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.home-btn {
+    padding: 0;
+    list-style: none;
+}
+
+.home-btn li {
+    margin: 1em 0;
+}
+
+.home-btn li a {
+    background: #fff;
+    padding: .7em 1em;
+    padding-top: 1em;
+    display: block;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 17px;
+    text-decoration: none;
+    position: relative;
+}
+
+.home-btn li a:after {
+    content: 'o';
+    font-size: 20px;
+    position: absolute;
+    right: 1em;
+    top: 30%;
+}
+
+.home-btn li a:hover {
+    background: #0c7482;
+    color: #fff;
+}
+
+.backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    vertical-align: middle;
+    z-index: 2;
+    display: none;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.modal-body {
+    background: #fff;
+    min-width: 300px;
+    padding: 1em;
+}
+
+.form-field {
+    margin: 1em 0;
+}
+
+input, textarea, select {
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0.3em 0;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+button {
+    border: none;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn {
+    background: #055416;
+}
+
+.cancel-btn {
+    background: #750606;
+}
+
+.error-field {
+    border-bottom-color: #fc0505;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+}
+
+td, th {
+    border: 1px solid #666;
+    padding: 0.5em 1em;
+}
+
+a {
+    color: #4507b9;
+    text-decoration: none;
+}
